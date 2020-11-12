@@ -1,0 +1,56 @@
+version: '3.4'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    networks:
+      - infoglobo-network
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    networks:
+      - infoglobo-network
+  infoglobo-app:
+    image: maven:3.6.3-jdk-11
+    restart: always
+    working_dir: /infoglobo
+    environment:
+       TZ: America/Sao_Paulo 
+       SPRING_BOOT_ENVIRONMENT: Production
+    volumes:
+      - .:/infoglobo
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn clean spring-boot:run
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    networks:
+      - infoglobo-network
+
+  infoglobo-frontend:
+    image: node:15.2.0-alpine3.10
+    restart: always
+    working_dir: /web
+    environment:
+       TZ: America/Sao_Paulo
+    volumes:
+      - ./frontend:/web   
+    ports:
+      - "3000:3000"
+    command: sh -c "npm i && npm run dev"
+    links:
+      - infoglobo-app
+    depends_on:
+      - infoglobo-app
+    networks:
+      - infoglobo-network
+networks:
+    infoglobo-network:
+        driver: bridge

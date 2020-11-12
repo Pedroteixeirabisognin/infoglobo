@@ -1,0 +1,47 @@
+Infoglobo_Frontend/.DS_Store
+Infoglobo_Frontend/node_modules/
+Infoglobo_Frontend/dist/
+Infoglobo_Frontend/npm-debug.log
+Infoglobo_Frontend/yarn-error.log
+
+# Editor directories and files
+Infoglobo_Frontend/.idea
+Infoglobo_Frontend/*.suo
+Infoglobo_Frontend/*.ntvs*
+Infoglobo_Frontend/*.njsproj
+Infoglobo_Frontend/*.sln
+
+Infoglobo_Backend/HELP.md
+Infoglobo_Backend/target/
+Infoglobo_Backend/!.mvn/wrapper/maven-wrapper.jar
+Infoglobo_Backend/!**/src/main/**/target/
+Infoglobo_Backend/!**/src/test/**/target/
+
+### STS ###
+Infoglobo_Backend/.apt_generated
+Infoglobo_Backend/.classpath
+Infoglobo_Backend/.factorypath
+Infoglobo_Backend/.project
+Infoglobo_Backend/.settings
+Infoglobo_Backend/.springBeans
+Infoglobo_Backend/.sts4-cache
+
+### IntelliJ IDEA ###
+Infoglobo_Backend/.idea
+Infoglobo_Backend/*.iws
+Infoglobo_Backend/*.iml
+Infoglobo_Backend/*.ipr
+
+### NetBeans ###
+Infoglobo_Backend/nbproject/private/
+Infoglobo_Backend/nbbuild/
+Infoglobo_Backend/dist/
+Infoglobo_Backend/nbdist/
+Infoglobo_Backend/.nb-gradle/
+Infoglobo_Backend/build/
+Infoglobo_Backend/!**/src/main/**/build/
+Infoglobo_Backend/!**/src/test/**/build/
+
+### VS Code ###
+Infoglobo_Backend/.vscode/
+Infoglobo_Backend/.metadata/
