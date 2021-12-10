@@ -13,12 +13,6 @@ Efetuar os seguintes comandos:
 
 ``` bash
 
-docker-compose up -d mongo
-
-mvnw clean install -DskipTests
-
-docker-compose stop mongo
-
 docker-compose up --build
 
 ```

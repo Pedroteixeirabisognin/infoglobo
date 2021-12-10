@@ -35,7 +35,7 @@ services:
       - infoglobo-network
 
   infoglobo-frontend:
-    image: node:15.2.0-alpine3.10
+    image: node
     restart: always
     working_dir: /web
     environment:
@@ -44,7 +44,8 @@ services:
       - ./frontend:/web   
     ports:
       - "3000:3000"
-    command: sh -c "npm i && npm run dev"
+    command: >
+     bash -c "npm i && npm run dev"
     links:
       - infoglobo-app
     depends_on:
