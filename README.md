@@ -5,6 +5,8 @@ de publicação, titulo, conteudo. Utilizando Spring Security para autenticaçã
 
 # Instalação
 
+Link para instalar o WSL - https://learn.microsoft.com/pt-br/windows/wsl/install
+
 Na pasta raiz do projeto 
 
 Efetuar os seguintes comandos:
