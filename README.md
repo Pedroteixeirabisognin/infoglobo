@@ -6,6 +6,7 @@ de publicação, titulo, conteudo. Utilizando Spring Security para autenticaçã
 # Instalação
 
 Link para instalar o WSL - https://learn.microsoft.com/pt-br/windows/wsl/install
+Habilitar recurso de máquina virtual (para o docker) - https://learn.microsoft.com/pt-br/windows/wsl/install-manual#step-3---enable-virtual-machine-feature
 
 Na pasta raiz do projeto 
 
